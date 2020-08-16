@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>School</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-item>
+            <ion-label>Name : </ion-label>
+            <ion-input type="text" placeholder="Xavier"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Address:</ion-label>
+            <ion-input type="text" placeholder="2nd Street to corner"></ion-input>
+        </ion-item>
+        <ion-radio-group value="co-ed">
+            <ion-list-header>
+                <ion-label>Type</ion-label>
+            </ion-list-header>
+            <ion-item>
+                <ion-label>Girls</ion-label>
+                <ion-radio slot="start" value="Girls"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Boys</ion-label>
+                <ion-radio slot="start" value="Boys"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Co-ed</ion-label>
+                <ion-radio slot="start" value="co-ed"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-card>
+
+    <ion-button expand="block">Submit</ion-button>
+
+</ion-content>

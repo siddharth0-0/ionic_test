@@ -1,3 +1,31 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-menu content-id="main">
+        <ion-header>
+            <ion-toolbar class="toolback">
+                <ion-title>Menu</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-icon name="home-outline" slot="start"></ion-icon>
+                    <ion-label>Home</ion-label>
+                </ion-item>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/student">
+                        <ion-icon name="person-circle" slot="start"></ion-icon>
+                        <ion-label>Student</ion-label>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/school">
+                        <ion-icon name="school-outline" slot="start"></ion-icon>
+                        <ion-label>School</ion-label>
+                    </ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

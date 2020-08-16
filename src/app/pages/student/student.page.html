@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Student</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <strong><p style="margin-top: 15px;">This Is Student page</p></strong>
+    <ion-card>
+        <ion-item>
+            <ion-label>First name : </ion-label>
+            <ion-input type="text" placeholder="John" [(ngModel)]="fname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Last name : </ion-label>
+            <ion-input type="text" placeholder="Doe" [(ngModel)]="lname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label for="lname">Email : </ion-label>
+            <ion-input id="lname" type="mail" placeholder="joe@mail.com" [(ngModel)]="emaill"></ion-input>
+        </ion-item>
+
+    </ion-card>
+    <ion-button fill="solid" size="small" color="secondary" (click)="onClick()">Submit</ion-button>
+
+    <ion-card>
+        <h5>{{fullname}}</h5>
+        <h5>{{clickemail}}</h5>
+    </ion-card>
+
+</ion-content>
